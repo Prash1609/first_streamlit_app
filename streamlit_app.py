@@ -23,8 +23,8 @@ streamlit.dataframe(fruits_to_show)
 #Fruityvice advice display
 streamlit.header("Fruityvice Fruit Advice!")
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response.json())
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Kiwi")
+#streamlit.text(fruityvice_response.json())
 
 # Convert Json to flattened table
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
