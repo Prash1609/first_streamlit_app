@@ -51,7 +51,7 @@ except URLError as e:
 
 
 #refactor
-streamlit.header("The fruit load list contains:")
+streamlit.header("VIEW OUR FRUIT LIST - ADD YOUR FAVORITES!")
 
 #snowaflake to fetch list
 def get_fruit_load_list():
